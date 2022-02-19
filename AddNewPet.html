@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charsetn = "utf-8">
+<h1>Add New Pet</h1>
+</head>
+<body>
+
+    
+    <div>
+      <!--<form action="/action_page.php">-->
+        <label for="petname">Pet Name</label>
+       <p> <input type="text" id="petname" name="petname" placeholder="Pet name is.."> </p>
+    
+        <label for="datebirth">Date Of Birth</label>
+       <p>
+        <input type="text" id="datebirth" name="dateofbirth" placeholder="Date Of Birth the pet..">
+       </p> 
+
+        <label for="gender">Gender</label>
+        <p> 
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+        </p>
+
+        
+        <label for="breed">Breed</label>
+       <p>
+        <input type="text" id="breed" name="breed" placeholder="Breed..">
+       </p> 
+        
+    
+       <label for="photo">Add Photo of pet</label>
+        <!--<input type="image" id="petphoto" name="photo" placeholder="Add photo of your pet..">-->
+      <p>
+          <button type="button">Upload new image</button>
+      </p> 
+      
+      <label for="status">Status</label>
+        <p> 
+            <select id="status" name="status">
+                <option value="spayed">Spayed</option>
+                <option value="neutered">Neutered</option>
+              </select>
+        </p>
+
+       
+      <label for ="VaccinationsList">Vaccinations List (optional)</label>
+      <p>
+        <textarea  name="VaccinationsList" rows="6" cols="40"> Enter Vaccinations List Here...</textarea>
+      </p>
+      <label for ="MedicalHistory"> Medical History (optional)</label>
+      <p>
+        <textarea name="MedicalHistory" rows="6" cols="40"> Enter Medical History Here.... </textarea>
+      </p>
+      
+
+        <!-- 
+      <label for ="VaccinationsList">Vaccinations List (optional)</label>
+      <p>
+        <input type="file" name="upload" accept="application/pdf" />
+      </p>
+      <label for ="MedicalHistory"> Medical History (optional)</label>
+      <p>
+        <input type="file" name="upload" accept="application/pdf" />
+      </p>
+    -->
+
+
+      <button type="button"><a href="MyPets.html">Add</a></button>
+      <!--<p><input type="submit" value="Add" ><a href="MyPets.html">Menu Home</a> ></p>-->
+      </form>
+    </div>
+    
+  </body>
+  <!-- https://www.w3schools.com/howto/howto_css_vertical_menu.asp-->
+  <!--https://stackoverflow.com/questions/12142536/how-to-make-input-type-file-should-accept-only-pdf-and-xls-->
+  </html>
+    
