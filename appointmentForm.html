@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="pet care appointments">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+    <header>
+        <h1>Pet Care</h1>
+    </header>
+    <mian>
+        <h3>Request new appointment:</h3>
+        <form method="post" action="#">
+            <p><label title="pet name in the website"><strong>Pet name:</strong>
+                <input name="petName" type="text" size="20">
+            </label></p>
+            <p><strong>Service:</strong> <br>
+                <label>Checkup
+                    <input name="service" type="radio" value="Checkup">
+                </label>
+
+                <label>Grooming
+                    <input name="service" type="radio" value="Grooming">
+                </label>
+
+                <label>Boarding
+                    <input name="service" type="radio" value="Boarding">
+                </label>
+            </p>
+
+            <p><label><strong>Note:</strong><br>
+                <textarea name="appNote" rows="4" cols="24">Any thing we should know about?</textarea>
+            </label></p>
+
+            <p><label><strong>Date:</strong>
+                <input name="appdate" type="date">
+            </label></p>
+
+            <p><label><strong>Time:</strong>
+                <input name="appTime" type="time">
+            </label></p>
+            <p>
+                <input type="submit" value="Confirm">
+                <a href="appointment.html"><input type="button" value="Cancel"></a>
+            </p>
+
+        </form>
+
+
+    </mian>
+    <footer>
+
+    </footer>     
+    </body>
+</html>
