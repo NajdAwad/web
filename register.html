@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<!-- heding elements-->
+
+<html>
+
+
+  <head>
+  
+     <meta charset = "utf-8">
+	 <title> Register </title>
+   <style type = "text/css">
+
+    .loginbox {
+      width: 370px;
+      height:650px;
+      background: #EDEAE5;
+      color: black;
+      top: 55%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      box-sizing: border-box;
+      border-radius: 10%;
+      padding: 70px 30px;
+    }
+    .avatar {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  h1{
+    margin: 0%;
+    padding: 0 0 20;
+    text-align: center;
+    font-size: 30px;
+  }
+  .loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+  .loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .loginbox input[type="text"], input[type="password"]
+  {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  }
+  .loginbox input[type="submit"] {
+    width: 200px;
+		  padding: 15px 0;
+		  text-align: center;
+		  margin: 20px 55px;
+		  border-radius: 25px;
+		  font-weight: bold;
+		  border: 2px solid #9FEDD7;
+		  background: #9FEDD7;
+		  color: rgb(0, 0, 0);
+		  cursor: pointer;
+		  position: relative;
+		  overflow: hidden;
+  }
+
+      </style>
+ 
+   </head>
+   
+   <body>
+    <div class="loginbox">
+      <img src="user.png" class="avatar">
+   
+      <h1><strong> Register </strong></h1>
+     <br>
+
+	<form>
+	
+    <P>E-mail Address:</P>
+  <input type="text" name="E-mail" placeholder=" Enter E-mail">
+    <P>Password:</P>
+  <input type="password" name="pwd" placeholder="Enter password">
+
+  <P>Phone Number:</P>
+  <input type="text" name="Pnum" placeholder=" Enter phone number">
+    <P>First Name:</P>
+  <input type="text" name="Fname" placeholder="Enter first name">
+
+  <P>Last Name:</P>
+  <input type="text" name="Lname" placeholder="Enter last name">
+  
+  
+   <label> Gender:
+   <select name= "gender">
+   <option>Male</option>
+   <option>Female</option>
+   </select>
+   </label> <br>
+   <input type= "submit" value ="Register">
+
+  
+</form>
+
+    
+    </div>
+	
+	   </body>
+
+
+
+</html>
