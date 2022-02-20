@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charsetn = "utf-8">
+
+<style>
+    .content {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 10px;
+    }
+    header{
+        width: 100%;
+        height: 150px;
+        text-shadow: 1px 1px 1px rgb(252,225,129);
+        background-image: linear-gradient(90deg, rgba(252,225,129,1) 22%, rgba(159,237,215,1) 82%);
+        text-align: center;
+        position: relative;
+        /*position: fixed;*/
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }</style>
+</head>
+
+
+
+<body>
+
+    <h1>
+        <header>Pet care</header>
+    </h1>
+    <div class="content">
+    <h2>Pet#1</h2>
+    <fieldset>
+        <p>
+            <img src = "cat_images.jpg" width ="100" height ="100" alt ="cat images"> 
+        </p>
+        <p> Upload new photo:
+            <input type="file" name="upload"  accept="application/pdf,application/vnd.ms-excel" />
+        </p>
+        <p>
+            <label>Pet's Name</label>
+            <input name="PetName" type="text" id="input-PetName"   value="Mila"> 
+        </p>
+        <p>
+            <label>Date Of Birth</label>
+            <input name="DateOfBirth" type="text" id="input-DateOfBirth"   value=" 1/2/2021"> 
+        </p>
+        <p>
+            <label for="gender">Gender</label>
+                 
+                    <select id="gender" name="gender">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option> 
+                      </select>
+            
+        </p>
+        <p>
+            <label>Breed</label>
+            <input name="Breed" type="text" id="input-Breed"   value="Feli cat"> 
+        </p>        
+<p>
+<label for="status">Status</label>
+         
+    <select id="status" name="status">
+        <option value="spayed">Spayed</option>
+         <option value="neutered">Neutered</option> 
+   </select>
+</p>  
+ <label for ="VaccinationsList">Vaccinations List (optional)</label>
+    <p> 
+        <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel" />
+       
+    </p>
+<label for ="MedicalHistory"> Medical History (optional)</label>
+  <p>
+    <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel" />
+       
+  </p>
+<p>
+    <input type= "submit" name="save" value ="Save">
+</p>
+</fieldset>
+</div>
+</body>
+<!--https://www.bootdey.com/snippets/view/user-profile-bio-graph-and-total-sales-->
+<!--https://www.bootdey.com/snippets/view/bs5-edit-profile-account-details -->
+
+</html>

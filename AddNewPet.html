@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charsetn = "utf-8">
+
+<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+header{
+	width: 100%;
+	height: 150px;
+    text-shadow: 1px 1px 1px rgb(252,225,129);
+    background-image: linear-gradient(90deg, rgba(252,225,129,1) 22%, rgba(159,237,215,1) 82%);
+	text-align: center;
+	position: relative;
+	/*position: fixed;*/
+	top: 0;
+    left: 0;
+    right: 0;
+	overflow: hidden;
+}</style>
+
+</head>
+
+<body>
+  <h1>
+    <header>Pet care</header>
+    
+  </h1>
+  
+    
+<div class="content" >
+  <h1>Add New Pet</h1>
+  <fieldset>
+      <!--<form action="/action_page.php">-->
+        <label for="petname">Pet Name</label>
+       <!--<div class="underLine">-->
+       <p> <input type="text" id="petname" name="petname" placeholder="Pet name is.."> </p>
+    
+        <label for="datebirth">Date Of Birth</label>
+       <p>
+        <input type="text" id="datebirth" name="dateofbirth" placeholder="Date Of Birth the pet..">
+       </p> 
+
+        <label for="gender">Gender</label>
+        <p> 
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+        </p>
+        <label for="breed">Breed</label>
+       <p>
+        <input type="text" id="breed" name="breed" placeholder="Breed..">
+       </p> 
+        
+       <label for="photo">Add Photo of pet</label>
+        <!--<input type="image" id="petphoto" name="photo" placeholder="Add photo of your pet..">-->
+      <p>
+        <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel" />
+      </p> 
+      
+      <label for="status">Status</label>
+        <p> 
+            <select id="status" name="status">
+                <option value="spayed">Spayed</option>
+                <option value="neutered">Neutered</option>
+              </select>
+        </p>
+
+       
+      <label for ="VaccinationsList">Vaccinations List (optional)</label>
+      <p>
+        <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel" />
+        
+      </p>
+      <label for ="MedicalHistory"> Medical History (optional)</label>
+      <p>
+        <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel" />
+       
+      </p>
+    
+    <input type= "submit" name="Add" value ="Add">
+
+<!--<input type="submit"> <a href="MyPets.html">Add</a></input>
+
+<button class="buttonS" type="button"><a href="MyPets.html">Add</a></button>
+      <p><input type="submit" value="Add" ><a href="MyPets.html">Menu Home</a> ></p>-->
+    <!--</div>  -->
+  </fieldset>
+</div>
+    
+    
+  </body>
+  <!--https://stackoverflow.com/questions/12142536/how-to-make-input-type-file-should-accept-only-pdf-and-xls-->
+  <!-- https://www.w3schools.com/howto/howto_css_vertical_menu.asp-->
+  </html>
+    
