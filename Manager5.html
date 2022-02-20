@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <title>Add service</title>
+    <style type = "text/css">
+
+  header{
+    width: 100%;
+    height: 150px;
+    text-shadow: 1px 1px 1px rgb(252,225,129);
+    background-image: linear-gradient(90deg, rgba(252,225,129,1) 22%, rgba(159,237,215,1) 82%);
+    text-align: center;
+     
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+body {
+  background-color: #EDEAE5;
+}
+
+            .floated { background-color: #FEF181;
+               font-size: 1.5em;
+               font-family: arial,helvetica,sans-serif;
+               padding: .2em;
+               float: center;
+               text-align: center;
+               width: 80%;}
+
+                img.picture
+    
+                 {display: block;
+                 margin: 0 auto;}
+
+ .button {
+  background-color: #555555;
+
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    position: absolute;
+  left: 450px;
+  top: 500px;
+  text-decoration-color: white;
+
+
+}             
+
+</style>
+</head>
+
+<header><img style="width: 12%; margin-right: 68em;"  src = "logo.jpeg " alt= "Animals picture"></header>
+        
+
+        <h1 class="floated">ADD SERVICE</h1>
+<fieldset>
+        <form method="post" action="#">
+            <p><label title="new service name"><strong>Service name:</strong>
+                <input name="petName" type="text" size="20" value="Example:Checkup">
+            </label></p>
+
+
+            <p><label><strong>Description:</strong><br>
+                <textarea name="appNote" rows="4" cols="24">Description..</textarea>
+            </label></p>
+
+ <p><label title="new service name"><strong>Price:</strong>
+                <input name="petName" type="text" size="20" value="Example:100SR">
+            </label></p>
+
+ 
+
+<h4>Upload Picture:</h4>
+<div class="container">
+  <div class="form-group" x-data="{ fileName: '' }">
+    <div class="input-group shadow">
+      <span class="input-group-text px-3 text-muted"><i class="fas fa-image fa-lg"></i></span>
+      <input type="file" x-ref="file" @change="fileName = $refs.file.files[0].name" name="img[]" class="d-none">
+     
+      <button class="browse btn btn-primary px-4" type="button" x-on:click.prevent="$refs.file.click()"><i class="fas fa-image"></i> ADD</button>
+    </div>
+  </div>
+</div>
+
+
+        </fieldset>
+
+        </form><br>
+</body>
+</html>
